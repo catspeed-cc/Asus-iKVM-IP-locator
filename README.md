@@ -5,7 +5,7 @@ A powershell script to find the IP of your Asus BMC/iKVM (for WRX80E)
 This only works on windows, so download the latest release ZIP from https://github.com/catspeed-cc/find-Asus-BMC-IP/releases and extract it.
 
 # Usage
-Use either the batch file or the PS1 file, but you _need_ both - only need to execute one. Make sure you are in the same directory as the script.
+Use either the batch file or the PS1 file, but you _need_ both - you only need to execute one of them.
 
 If you use the PS1 scipt, make sure you run  before every time you run it to allow the script to execute.
 
