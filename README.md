@@ -1,5 +1,5 @@
 # find-Asus-BMC-IP
-A powershell script to find the IP of your Asus BMC/iKVM (for WRX80E)
+A powershell script to find the IP of your Asus BMC/iKVM (for WRX80 boards incl. WRX80E)
 
 # Installation
 This only works on windows, so download the latest release ZIP from https://github.com/catspeed-cc/find-Asus-BMC-IP/releases and extract it.
