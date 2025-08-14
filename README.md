@@ -26,3 +26,4 @@ If you use the PS1 scipt, make sure you run  before every time you run it to all
 - The script was designed to utilize parameters because not everyone's network is the same as mine (192.168.10.*)
 - The script was designed to only enable PS execution for itself for security
 - Interactive version coming eventually :) At least v1.0.0 works :)
+- BASH version coming ? Maybe ? :)
