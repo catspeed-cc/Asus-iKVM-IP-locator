@@ -7,14 +7,17 @@ This only works on windows, so download the latest release ZIP from https://gith
 # Usage
 Use either the batch file or the PS1 file, but you _need_ both - only need to execute one. Make sure you are in the same directory as the script.
 
-You need to open either a CMD or a PowerShell as administrator and use the command with the parameters otherwise the CMD window just closes.
-
-If you use the PS1 scipt, make sure you run `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` before every time you run it to allow the script to execute.
+If you use the PS1 scipt, make sure you run  before every time you run it to allow the script to execute.
 
 ### find-BMC.bat
-`find-BMC.bat 192.168.10` - find BMC in your IP range \
-`find-BMC.bat 192.168.10 500` - find BMC in your IP range w/ 500ms timeout
+- Open CMD as administrator
+- `cd` to the directory where it was extracted
+- `find-BMC.bat 192.168.10` - find BMC in your IP range \
+- `find-BMC.bat 192.168.10 500` - find BMC in your IP range w/ 500ms timeout
 
 ### find-BMC.ps1
-`.\Find-BMC.ps1 -IPRange "192.168.10"` - find BMC in your IP range \
-`.\Find-BMC.ps1 -IPRange "10.0.5" -Timeout 500` - find BMC in your IP range w/ 500ms timeout
+- Open PowerShell as administrator
+- `cd` to the directory where it was extracted
+- Run `Set-ExecutionPolicy RemoteSigned -Scope CurrentUser` every time before you run the script
+- `.\Find-BMC.ps1 -IPRange "192.168.10"` - find BMC in your IP range \
+- `.\Find-BMC.ps1 -IPRange "10.0.5" -Timeout 500` - find BMC in your IP range w/ 500ms timeout
