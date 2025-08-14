@@ -51,17 +51,17 @@ for ($i = 1; $i -le 254; $i++) {
 
     # Output result
     if ($port443Open -and $port623Open) {
-        Write-Host "✅ BMC LIKELY at $IP (443 + 623 open)" -ForegroundColor Green
+        Write-Host "[OK] BMC LIKELY at $IP (443 + 623 open)" -ForegroundColor Green
     }
     elseif ($port443Open) {
-        Write-Host "⚠️  HTTPS open, but no IPMI (port 623 closed)" -ForegroundColor Cyan
+        Write-Host "[IPMI+HTTPS] HTTPS open, but no IPMI (port 623 closed)" -ForegroundColor Cyan
     }
     elseif ($port623Open) {
-        Write-Host "🔍 IPMI detected (port 623), but no HTTPS" -ForegroundColor Magenta
+        Write-Host "[IPMI] IPMI detected (port 623), but no HTTPS" -ForegroundColor Magenta
     }
     else {
-        Write-Host "❌ No response" -ForegroundColor DarkGray
+        Write-Host "[FAIL] No response" -ForegroundColor DarkGray
     }
 }
 
-Write-Host "Scan complete." -ForegroundColor Yellow   
+Write-Host "Scan complete." -ForegroundColor Yellow
