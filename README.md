@@ -14,6 +14,7 @@ If you use the PS1 scipt, make sure you run  before every time you run it to all
 - `cd` to the directory where it was extracted
 - `find-BMC.bat 192.168.10` - find BMC in your IP range \
 - `find-BMC.bat 192.168.10 500` - find BMC in your IP range w/ 500ms timeout
+- It will set execution policy and run the PowerShell script
 
 ### find-BMC.ps1
 - Open PowerShell as administrator
