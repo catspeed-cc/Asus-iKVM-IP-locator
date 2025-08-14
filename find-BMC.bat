@@ -4,7 +4,7 @@
 setlocal
 
 :: PowerShell script path (assumes same directory)
-set "PSSCRIPT=%~dp0Find-BMC.ps1"
+set "PSSCRIPT=%~dp0find-BMC.ps1"
 
 :: Check if PowerShell script exists
 if not exist "%PSSCRIPT%" (
